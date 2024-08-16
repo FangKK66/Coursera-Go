@@ -13,7 +13,8 @@
 ### Compiled code is fast.
 ### Interpreters make coding easier.
 
-### Go has Automatic memory management.
+## Garbage Collection 
+Go has Automatic memory management.
 
 ----
 # Object
@@ -111,3 +112,15 @@ Different with other OOP.
     * `x := 100`
   * Variable is declared as type of expression on the right hand side
   * <font color="red">Can only do this inside a function</font>
+
+
+
+
+# Quiz
+Question 2\
+**What is the scope of a variable?**\
+A. The variable declaration  \
+B. The instructions where the variable is assigned a value\
+<u>C. Region of a program where the variable can be accessed</u>\
+D. The set of values to which a variable can be assigned\
+
