@@ -114,6 +114,7 @@
 - Format strings are good for formatting
 - Conversion characters for each argument
   - `fmt.Printf("Hi %s", x)`
+- ![](2024-08-18-17-38-38.png)
 
 ### Integers
 - Generic int declaration
@@ -181,6 +182,7 @@
   - <font color="red">Compare(a, b)</font> - returns an integer comparing two strings lexicographically. 0 if a==b, -1 if a < b,and +1 if a > b.
   - <font color="red">Contains(s, substr)</font> - returns true if substring is inside s
   - <font color="red">HasPrefix(s, prefix)</font> - returns true is the string s begins with prefix
+  - <font color="red">HasSuffix(s, suffix)</font> - returns true is the string s end with suffix
 
 ### String Manipulation
 - Strings are immutable, but modifiedstrings are returned
@@ -193,7 +195,7 @@
 ### Strconv Package
 - Conversions to and from stringrepresentations of basic data types
 - <font color="red">*Atoi(s)*</font> - converts string to int
-- <font color="red">*Itoa(s)*</font> - converts int(base 10) to string
+- <font color="red">*Itoa(i)*</font> - converts int(base 10) to string
 - <font color="red">*FormatFloat (f, fmt, prec, bitSize)*</font> - converts floating point number to a string
 - <font color="red">*ParseFloat (s, bitsize)*</font> - Converts a string to a floating point number
   
@@ -230,13 +232,79 @@
 
 
 
-### 
+## Control Flow
+### Control Structures
+- Statements which alter control flow
+  - ```
+    if <condition> {
+        <consequent>
+    }
+    ```
+- Expression `<condition>` is evaluated
+- `<consequent>` statements are executed if condition is `true`
+  ```
+  if x > 5 {
+    fmt.Printf("Yup")
+  }
+  ```
+- 
+
+### For Loops
+- Lterates while a conditon is true
+- May have an initialization and update operation
+  - ```
+    for <int>; <cond>; <update> {
+        <stmts>
+    }
+    ```
+![](2024-08-18-15-40-23.png)
+
+### Switch/Case
+- <font color="red">Switch</font> is a multi-way if statement
+- Switch may contain a <font color="red">tag</font> which is a variable to be checked 
+- Tag is compared to a constant defined in each <font color="red">case</font>
+- Case which matches tag is executed
+![alt text](image.png)
+  - while automatic break
 
 
+## Conrtrol Flow, Scan
+### Tagless Switch
+- Switch may not contain a tag
+- Case contains a boolean expression to evaluate
+- First true case is executed
+- ![](2024-08-18-15-52-22.png)
 
+### Break and Continue
+- <font color="red">Break</font> exits the containing loop
+    ```
+    i := 0
+    for i < 10 {
+        i++
+        if i == 5 { break }
+        fmt.Printf("hi ")
+    }
+    ```
+- <font color="red">Continue</font> skips the rest of the current iteration
+    ```
+    i := 0
+    for i < 10 {
+        i++
+        if i == 5 { continue }
+        fmt.Printf("hi ")
+    }
+    ```
 
+### Scan
+- Scan reads user input
+- Takes a pointer as in argument
+- Typed data is written to pointer
+- Returns number of scanned items
+  ```
+  var appleNum int
 
-
-
-
+  fmt.Printf("Number of apples?")
+  num, err :=
+  fmt.Sacn(&appleNum)
+  fmt.Printf(appleNum)
 
