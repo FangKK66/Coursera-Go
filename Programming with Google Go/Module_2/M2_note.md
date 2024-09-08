@@ -308,3 +308,6 @@
   fmt.Sacn(&appleNum)
   fmt.Printf(appleNum)
 
+## Quiz
+![](2024-09-07-20-05-39.png)
+![](2024-09-07-20-06-22.png)
