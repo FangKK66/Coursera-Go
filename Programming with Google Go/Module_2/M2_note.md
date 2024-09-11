@@ -186,7 +186,7 @@
 
 ### String Manipulation
 - Strings are immutable, but modifiedstrings are returned
-- <font color="red">*Replace (s, old, new, n)*</font> - replace returns a copy of the string swith the first n instances of oldreplaced by new
+- <font color="red">*Replace (s, old, new, n)*</font> - replace returns a copy of the string s with the first n instances of old replaced by new
 - <font color="red">*ToLower(s)*</font> // return new string
 - <font color="red">*ToUpper(s)*</font> // return new string
 - <font color="red">*TrimSpace(s)*</font> - returns a new string with all leading and trailing white space removed
